@@ -1,0 +1,57 @@
+.app {
+  padding: 24px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* 左侧链接，右侧按钮 */
+  padding: 12px 24px;
+  border: 1px solid var(--border, #e5e7eb);
+  background: var(--bg, #ffffff);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: var(--text, #111);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #61dafb;
+  /* React 蓝，可选 */
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  border: 1px solid var(--border, #e5e7eb);
+  background: transparent;
+  color: var(--text, #111);
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--card-bg, #f3f4f6);
+}
+
+.content {
+  padding: 0 24px;
+}
